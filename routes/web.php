@@ -35,7 +35,7 @@ Route::get('/cart/clear', 'Site\CartController@clearCart')->name('checkout.cart.
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/checkout', 'Site\CheckoutController@getCheckout')->name('checkout.index');
     Route::post('/checkout/order', 'Site\CheckoutController@placeOrder')->name('checkout.place.order');
-    Route::get('checkout/complete', 'Site\CheckoutController@complete')->name('checkout.complete');
+    
 });
 
 Route::get('account/orders', 'Site\AccountController@getOrders')->name('account.orders');
