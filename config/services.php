@@ -30,4 +30,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'nexmo' => [
+        'sms_from' => 'Vonage SMS API',
+    ],
+
+    // 'stripe' => [
+    //     'model' => App\User::class,
+    //     'key' => env('STRIPE_KEY'),
+    //     'secret' => env('STRIPE_SECRET'),
+    // ],
+
 ];
