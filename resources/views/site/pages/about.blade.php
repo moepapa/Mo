@@ -7,7 +7,7 @@
             <div class="col-12 col-sm-4 col-md-2"></div>
             <div class="col-12 col-sm-4 col-md-8">
                 <div class="item-img-wrap ">
-                    <img src="{{ asset('storage/garden.jpg') }}" class="img-responsive" alt="workimg" id="hover">
+                    <img src="{{ url('/garden.jpg') }}" class="img-responsive" alt="workimg" id="hover">
                     <div class="item-img-overlay">
                         <a href="#" class="show-image">
                             <span></span>

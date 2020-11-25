@@ -11,7 +11,7 @@
                     <ul class="list-unstyled">
                         <li>									
                             <a href="{{ url('/about') }}">
-                            <img class="img-fluid" src="{{ asset('storage/garden.jpg') }}" alt="" id="ss2">&nbsp;&nbsp;
+                            <img class="img-fluid" src="{{ url('/garden.jpg') }}" alt="" id="ss2">&nbsp;&nbsp;
                             ပျိုးပင်များစိုက်ပျိုးရောင်းချရခြင်း
                             </a>
                         </li>
