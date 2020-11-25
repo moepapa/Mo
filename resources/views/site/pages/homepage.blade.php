@@ -2,9 +2,10 @@
 @section('title', 'Homepage')
 
 @section('content')
-<div class="container-fluid" style="margin-top: 1rem;">
+<div class="container-fluid" style="margin-top: 1rem; margin-bottom: 2rem;">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-7">
+        <div class="col-12 col-sm-12 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10">
             <section class="hero-section" id="mart">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -17,7 +18,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">          
-                        <div class="carousel-item active" style="background-image: url('slide2.jpg')">
+                        <div class="carousel-item active" style="background-image: url('slide2.jpg'); height:100%;">
                             <a href="{{ url('/about') }}">
                                 <div class="carousel-caption d-none d-md-block">
                                     <div class="feature">
@@ -101,7 +102,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="carousel-item" style="background-image: url('slide7.jpg')">
+                        <div class="carousel-item" style="background-image: url('slide7.png')">
                             <a href="{{ url('/thazin') }}">
                                 <div class="carousel-caption d-none d-md-block">
                                     <div class="feature">
@@ -127,36 +128,37 @@
                 </div>
             </section>
         </div>
-        <div class="col-12 col-sm-12 col-md-5">
+        <div class="col-12 col-sm-12 col-md-1"></div>
+    </div>
+    <div class="row" style="margin-top:1rem;">
+        <div class="col-12 col-sm-12 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10">
             <div class="card">
-                <h3 class="short" style="text-align:center; margin-top:1rem;">ပျိုးပင်များစိုက်ပျိုးရောင်းချရခြင်း၏ရည်ရွယ်ချက်</h3>
-                <p class="pagg">"သစ်ပင်စိုက်ပါတို့ကမ္ဘာ၊ သာယာလှပစိမ်းမြမြ" ဆိုသည့် ဆောင်ပုဒ်အတိုင်း ကမ္ဘာကြီးလှပသာယာဖို့အတွက် တနိုင်တပိုင် ပါဝင်ကူညီရခြင်း ဖြစ်ပါတယ်။အိမ်အပြင်ဘက် ခြံထဲမှာသာမက အိမ်အတွင်းမှာ အပင်စိုက်ပျိုးထားရှိခြင်းဟာ ယခုခေတ်မှာ ခေတ်စားလာပါတယ်။ ဧည့်ခန်းထဲမှာ သစ်ပင် ပန်းမန်ရှိခြင်းဟာ ကျန်းမာရေးအကျိုးကျေးဇူးများကိုပေးနိုင်ပါတယ်လို့ ပညာရှင်များက ပြောကြားလိုက်ပါတယ်။ အိမ်တွင်းသာမက အိမ်ပြင်မှာ ပန်းမန်များ စိုက်ပျိုးခြင်းဟာ ကျန်းမာရေးအကျိုးကျေးဇူးများကိုပေးနိုင်ပါတယ်လို့ ပညာရှင်များ. . . .<a class="link" href="{{ url('/about') }}">&nbsp;&nbsp;&nbsp;ဆက်လက်ဖတ်ရှုရန် <i class="far fa-hand-point-right"></i></a></p>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/short') }}">&nbsp;&nbsp;&nbsp;သက်တမ်းတိုပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                <h3 class="home" style="text-align:center; margin-top:1rem;"><i class="fas fa-leaf green"></i><i class="fab fa-pagelines green"></i> ပျိုးပင်များစိုက်ပျိုးရောင်းချရခြင်း၏ရည်ရွယ်ချက် <i class="fab fa-pagelines green"></i><i class="fas fa-leaf green"></i></h3>
+                <p class="pagg">"သစ်ပင်စိုက်ပါတို့ကမ္ဘာ၊ သာယာလှပစိမ်းမြမြ" ဆိုသည့် ဆောင်ပုဒ်အတိုင်း ကမ္ဘာကြီးလှပသာယာဖို့အတွက် တနိုင်တပိုင် ပါဝင်ကူညီရခြင်း ဖြစ်ပါတယ်။အိမ်အပြင်ဘက် ခြံထဲမှာသာမက အိမ်အတွင်းမှာ အပင်စိုက်ပျိုးထားရှိခြင်းဟာ ယခုခေတ်မှာ ခေတ်စားလာပါတယ်။ ဧည့်ခန်းထဲမှာ သစ်ပင် ပန်းမန်ရှိခြင်းဟာ ကျန်းမာရေးအကျိုးကျေးဇူးများကိုပေးနိုင်ပါတယ်လို့ ပညာရှင်များက ပြောကြားလိုက်ပါတယ်။ အိမ်တွင်းသာမက အိမ်ပြင်မှာ ပန်းမန်များ စိုက်ပျိုးခြင်းဟာ ကျန်းမာရေးအကျိုးကျေးဇူးများအနေဖြင့် လေကောင်းလေသန့်ပိုရရှိခြင်း၊ အိမ်ခန်းကို ပိုမိုနေချင့်စဖွယ်ဖြစ်စေခြင်း၊  စိတ်ကျန်းမာရေးတိုးတက်လာစေခြင်း၊ စိတ်ဖိစီးမှုဖြစ်စရာအကြောင်းတွေကိုမေ့လျော့စေနိုင်ခြင်း၊ အလုပ်ကိစ္စများပိုမိုပြီးမြောက်စေခြင်း. . . .<a class="link" href="{{ url('/about') }}">&nbsp;&nbsp;&nbsp;ဆက်လက်ဖတ်ရှုရန် <i class="far fa-hand-point-right"></i></a></p>
+                <div class="row" style="margin-bottom:1rem;">
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/short') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;သက်တမ်းတိုပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/long') }}">&nbsp;&nbsp;&nbsp;သက်တမ်းရှည်ပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/long') }}">&nbsp;&nbsp;&nbsp;&nbsp;သက်တမ်းရှည်ပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/tree') }}">&nbsp;&nbsp;&nbsp;အရိပ်ရပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/tree') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;အရိပ်ရပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/fruit') }}">&nbsp;&nbsp;&nbsp;သီးပင်စားပင်ပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/fruit') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;သီးပင်စားပင်ပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/orchid') }}">&nbsp;&nbsp;&nbsp;သစ်ခွပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/orchid') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;သစ်ခွပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <a class="btn btn-success" href="{{ url('/thazin') }}">&nbsp;&nbsp;&nbsp;သဇင်ပျိုးပင်များအကြောင်း <i class="far fa-hand-point-right"></i></a>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <a class="link" href="{{ url('/thazin') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;သဇင်ပျိုးပင် <i class="far fa-hand-point-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-12 col-sm-12 col-md-1"></div>
     </div>    
 </div>
 @stop

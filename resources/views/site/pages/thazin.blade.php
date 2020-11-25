@@ -9,6 +9,20 @@
                 <div class="col-12 col-sm-4 col-md-1"></div>
                 <div class="col-12 col-sm-4 col-md-10">
                     <h6 class="short">သဇင်ပျိုးပင်များ</h6>
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                        <div class="col-12 col-sm-4 col-md-10">
+                            <div class="item-img-wrap ">
+                                <img src="{{ url('/slide7.png') }}" class="img-responsive" alt="workimg" id="hover">
+                                <div class="item-img-overlay">
+                                    <a href="#" class="show-image">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                    </div>
                     <h6 class="short">စိုက်ပျိုးနည်းစနစ်နှင့်အပင်ပြုစုပုံ</h6>
                     <p class="pagg">ရောင်းချလျက်ရှိသော သဇင်မှာ ရခိုင်သဇင် ဖြစ်သည်။ သဇင်ပန်းပွင့်သောကာလမှာ နိုဝင်ဘာလ၊ ဒီဇင်လာလနှင့် ဇန်နဝါရီလတို့ ဖြစ်ပါသည်။</p><br>
                     <h6 class="little">(၁)စိုက်ပျိုးသည့်ဒေသ</h6>

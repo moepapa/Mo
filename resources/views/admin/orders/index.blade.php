@@ -3,7 +3,7 @@
 @section('content')
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-bar-chart"></i> {{ $pageTitle }}</h1>
+            <h1><i class="app-menu__icon fas fa-shopping-cart"></i> {{ $pageTitle }}</h1>
             <p>{{ $subTitle }}</p>
         </div>
     </div>
@@ -45,6 +45,7 @@
                                 <td class="text-center">
                                     <div class="btn-group" role="group" aria-label="Second group">
                                         <a href="{{ route('admin.orders.show', $order->order_number) }}" class="btn btn-sm btn-primary">View</a>
+                                        <a href="{{ route('admin.orders.delete', $order->order_number) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </td>
                             </tr>

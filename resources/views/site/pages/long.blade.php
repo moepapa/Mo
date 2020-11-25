@@ -9,6 +9,20 @@
                 <div class="col-12 col-sm-4 col-md-1"></div>
                 <div class="col-12 col-sm-4 col-md-10">
                     <h6 class="short">သက်တမ်းရှည်ပန်းပျိုးပင်များ</h6>
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                        <div class="col-12 col-sm-4 col-md-10">
+                            <div class="item-img-wrap ">
+                                <img src="{{ url('/slide3.jpg') }}" class="img-responsive" alt="workimg" id="hover">
+                                <div class="item-img-overlay">
+                                    <a href="#" class="show-image">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                    </div>
                     <h6 class="short">အပင်သဘာဝနှင့်သွင်ပြင်လက္ခဏာများ</h6>
                     <p class="pagg">သက်တမ်းရှည်ပန်းပင်အများစုမှာ အပင်ရှည်မျိုးများ ဖြစ်ကြသည်။ သက်တမ်းရှည်ပန်းပျိုးပင်များထဲမှ ယခု စိုက်ပျိုးရောင်းချလျက်ရှိသော ပန်းပင်များမှာ (၁)ခေါင်ရမ်း၊ (၂)ပုဏ္ဏရိပ်၊ (၃)နွယ်သာကီ၊ (၄)စံပယ်၊ (၅)သရဖီ၊ (၆)စကားဝါ၊ (၇)ယုဇန နှင့် (၈)ကံ့ကော်တို့ ဖြစ်ပါသည်။ </p><br>
                     <h6 class="little">(၁)ခေါင်ရမ်းပန်း</h6>

@@ -9,6 +9,20 @@
                 <div class="col-12 col-sm-4 col-md-1"></div>
                 <div class="col-12 col-sm-4 col-md-10">
                     <h6 class="short">သီးပင်စားပင်ပျိုးပင်များ</h6>
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                        <div class="col-12 col-sm-4 col-md-10">
+                            <div class="item-img-wrap ">
+                                <img src="{{ url('/slide5.jpg') }}" class="img-responsive" alt="workimg" id="hover">
+                                <div class="item-img-overlay">
+                                    <a href="#" class="show-image">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                    </div>
                     <h6 class="short">အပင်သဘာဝနှင့်သွင်ပြင်လက္ခဏာများ</h6>
                     <p class="pagg">သီးပင်စားပင်အများစုမှာ သက်တမ်းရှည်ပြီး အပင်ရှည်မျိုးများ ဖြစ်ကြသည်။ သီးပင်စားပင်များထဲမှ ယခု စိုက်ပျိုးရောင်းချလျက်ရှိသော ပန်းပင်များမှာ (၁)ဩဇာပင်၊ (၂)သလဲပင်၊ (၃)စိန်တလုံးသရက်ပင်နှင့် (၄)အုန်းပင်တို့ ဖြစ်ပါသည်။ </p><br>
                     <h6 class="little">(၁)ဩဇာပင်</h6>

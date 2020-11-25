@@ -27,4 +27,14 @@ class OrderController extends BaseController
         $this->setPageTitle('Order Details', $orderNumber);
         return view('admin.orders.show', compact('order'));
     }
+
+    public function delete($orderNumber)
+    {
+        $order = $this->orderRepository->deleteOrder($orderNumber);
+
+        if (!$order) {
+            return $this->responseRedirectBack('Error occurred while deleting order.', 'error', true, true);
+        }
+        return $this->responseRedirect('admin.orders.index', 'Order deleted successfully' ,'success',false, false);
+    }
 }

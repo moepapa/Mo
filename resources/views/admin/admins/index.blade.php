@@ -3,7 +3,7 @@
 @section('content')
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-bar-chart"></i> Authenticated Admin</h1>
+            <h1><i class="app-menu__icon fas fa-user"></i> Authenticated Admin</h1>
         </div>
     </div>
     <div class="row">

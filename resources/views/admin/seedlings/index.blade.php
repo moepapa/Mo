@@ -3,7 +3,7 @@
 @section('content')
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-shopping-bag"></i> {{ $pageTitle }}</h1>
+            <h1><i class="app-menu__icon fas fa-seedling"></i> {{ $pageTitle }}</h1>
             <p>{{ $subTitle }}</p>
         </div>
         <a href="{{ route('admin.seedlings.create') }}" class="btn btn-primary pull-right">Add seedling</a>

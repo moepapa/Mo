@@ -25,7 +25,7 @@
         @endif
     </div>
 
-    <section class="section-content bg padding-y border-top" id="site">
+    <section class="section-content bg padding-y" id="site">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
@@ -63,32 +63,32 @@
                                 <article class="p-5">
                                     <h3 class="titleName mb-3">{{ $seedling->myan_name }}</h3><br>
                                     <dl class="row">
-                                        <dt class="col-sm-3">အင်္ဂလိပ်အမည်</dt>
-                                        <dd class="col-sm-9">{{ $seedling->eng_name }}</dd>
-                                        <dt class="col-sm-3">ရုက္ခဗေဒအမည်</dt>
-                                        <dd class="col-sm-9">{{ $seedling->botany_name }}</dd>
-                                        <dt class="col-sm-3">သက်တမ်း</dt>
-                                        <dd class="col-sm-9">{{ $seedling->duration }}</dd>
-                                        <dt class="col-sm-3">အမျိုးအစား</dt>
-                                        <dd class="col-sm-9">{{ $seedling->type->name }}</dd>
-                                        <dt class="col-sm-3">အလေးချိန်</dt>
-                                        <dd class="col-sm-9">{{ $seedling->weight }} kg</dd>
-                                        <dt class="col-sm-3">မျိုးရင်း</dt>
-                                        <dd class="col-sm-9">{{ $seedling->race }}</dd>
-                                        <dt class="col-sm-3">မူရင်းဒေသ</dt>
-                                        <dd class="col-sm-9">{{ $seedling->origin }}</dd>
-                                        <dt class="col-sm-3">ပျိုးပင်အရေအတွက်</dt>
-                                        <dd class="col-sm-9">
+                                        <dt class="col-6 col-sm-6 col-md-4">အင်္ဂလိပ်အမည်</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->eng_name }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">ရုက္ခဗေဒအမည်</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->botany_name }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">သက်တမ်း</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->duration }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">အမျိုးအစား</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->type->name }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">အလေးချိန်</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->weight }} kg</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">မျိုးရင်း</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->race }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">မူရင်းဒေသ</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->origin }}</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">ပျိုးပင်အရေအတွက်</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">
                                             @if ($seedling->quantity == 0)
-                                                <span class="badge badge-danger">Unavailable</span>
+                                            - <span class="badge badge-danger">Unavailable</span>
                                             @elseif ($seedling->quantity < 6)
-                                                <span class="badge badge-info">only {{ $seedling->quantity }} left</span>
+                                            - <span class="badge badge-info">only {{ $seedling->quantity }} left</span>
                                             @else
-                                                <span class="badge badge-success">{{ $seedling->quantity }} available</span>
+                                            - <span class="badge badge-success">{{ $seedling->quantity }} available</span>
                                             @endif
                                         </dd>
-                                        <dt class="col-sm-3">ဈေးနှုန်း</dt>
-                                        <dd class="col-sm-9">{{ $seedling->price }} ks</dd>
+                                        <dt class="col-6 col-sm-6 col-md-4">ဈေးနှုန်း</dt>
+                                        <dd class="col-6 col-sm-6 col-md-8">- {{ $seedling->price }} ks</dd>
                                     </dl>
                                     <div class="mb-3">
                                         @if ($seedling->sale_price > 0)
@@ -118,7 +118,7 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                                        <button type="submit" class="btn btn-successs"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
                                     </form>
                                 </article>
                             </aside>

@@ -16,6 +16,7 @@
 
 .titleName{
   color:  rgb(114, 204, 30);
+  font-size: large;
   font-weight: bold;
 }
 
@@ -29,7 +30,7 @@
 	font-size: 13px;
 	border: none;
 	outline: none;
-	background-color: rgb(114, 204, 30);
+	background-color: black;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -37,7 +38,7 @@
 }
 
 #myBtn:hover {
-	background-color: #3B8839;
+	background-color: rgb(138, 112, 73);
 }
 /*scroll up*/
 
@@ -47,8 +48,8 @@
 }
 
 .carousel-item {
-	height: 67vh;
-	min-height: 330px;
+	height: 75vh;
+	min-height: 75vh;
 	background: no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -75,19 +76,19 @@
 	position: absolute;
 	right: 0;
 	left: 0;
-	bottom: 99%;
+	bottom: 99.9%;
 	margin: auto;
 	text-align: center;
 }
 
 .feature .cat-link {
 	position: relative;
-	top: 1.5rem;
+	top: 0.8%;
 	left: 0;
 	color: black;
 	font-size: 1.2rem;
-	padding: .5rem 0.3rem;
-	letter-spacing: .1rem;
+	padding: 1.3% 0.5%;
+	letter-spacing: .1%;
 	line-height: initial;
 }
 
@@ -98,11 +99,11 @@
 .feature .feature-title {
 	color: rgb(12, 12, 12);
 	background-color: #fff;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin-bottom: 3rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-bottom: 12%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .featured .entry-title {

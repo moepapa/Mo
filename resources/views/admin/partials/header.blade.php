@@ -1,3 +1,4 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 <header class="app-header">
     <a class="app-header__logo" href="{{ route('admin.seedlings.index') }}">DahliaSeedlings</a>
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>

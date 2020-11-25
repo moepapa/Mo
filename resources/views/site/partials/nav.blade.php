@@ -4,7 +4,7 @@
                 aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="main_nav" style="margin-left: 8%;">
+        <div class="collapse navbar-collapse" id="main_nav" style="margin-left: 12%;">
             <ul class="navbar-nav">
                 @foreach($categories as $cat)
                     @foreach($cat->items as $category)

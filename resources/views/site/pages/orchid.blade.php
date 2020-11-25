@@ -9,6 +9,20 @@
                 <div class="col-12 col-sm-4 col-md-1"></div>
                 <div class="col-12 col-sm-4 col-md-10">
                     <h6 class="short">သစ်ခွပျိုးပင်များ</h6>
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                        <div class="col-12 col-sm-4 col-md-10">
+                            <div class="item-img-wrap ">
+                                <img src="{{ url('/slide6.jpg') }}" class="img-responsive" alt="workimg" id="hover">
+                                <div class="item-img-overlay">
+                                    <a href="#" class="show-image">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                    </div>
                     <h6 class="short">စိုက်ပျိုးနည်းစနစ်နှင့်အပင်ပြုစုပုံ</h6>
                     <p class="pagg">သစ်ခွပျိုးပင်များထဲမှ ယခု စိုက်ပျိုးရောင်းချလျက်ရှိသော ပန်းပင်များမှာ (၁)Lenavat၊ (၂)Pimsai၊ (၃)Bhimayothin၊ (၄)Sanderiana၊ (၅)Udom Gold၊ (၆)Pissamai၊ (၇)Vantryနှင့် (၈)DannyGermanတို့ ဖြစ်ပါသည်။ သစ်ခွအမည်သာ ကွဲပြားပြီး မျိုးစိပ်တူများဖြစ်သည့်အတွက် အပင်သဘာဝနှင့်သွင်ပြင်လက္ခဏာများမှာ တူညီကြပါသည်။</p><br>
                     <h6 class="little">(၁)စိုက်ပျိုးပြုစုပုံနှင့်အလင်းရောင်</h6>

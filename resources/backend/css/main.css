@@ -69,7 +69,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: medium;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -13139,12 +13139,13 @@ be a descendant of the grid when it is being dragged.
 
 .app-title h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: large;
   font-weight: 400;
 }
 
 .app-title p {
   margin-bottom: 0;
+  font-size: medium;
   font-style: italic;
 }
 
@@ -13220,14 +13221,14 @@ be a descendant of the grid when it is being dragged.
 }
 
 .tile .overlay .l-text {
-  font-size: 24px;
+  font-size: large;
   margin-top: 15px;
 }
 
 .tile .tile-title {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: medium;
 }
 
 .tile .tile-title-w-btn {
@@ -13336,7 +13337,7 @@ be a descendant of the grid when it is being dragged.
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 18px;
+  font-size: medium;
   -webkit-font-smoothing: antialiased;
   width: 1em;
   display: inline-block;
@@ -13416,7 +13417,7 @@ be a descendant of the grid when it is being dragged.
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 25px;
+  font-size: large;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   margin-right: 5px;
@@ -14075,7 +14076,7 @@ be a descendant of the grid when it is being dragged.
 .page-error h1 {
   margin: 10px;
   color: #dc3545;
-  font-size: 42px;
+  font-size: medium;
 }
 
 .folder-head {
@@ -14165,7 +14166,7 @@ be a descendant of the grid when it is being dragged.
   border-left: 3px solid transparent;
   padding: 12px 15px;
   border-bottom: 0;
-  font-size: 15px;
+  font-size: medium;
   border-radius: 0;
 }
 
@@ -14208,7 +14209,7 @@ be a descendant of the grid when it is being dragged.
 .user .timeline-post .post-media h5 {
   margin-top: 0;
   margin-bottom: 3px;
-  font-size: 15px;
+  font-size: medium;
 }
 
 .user .timeline-post .post-content {
@@ -14241,7 +14242,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .user .user-settings .line-head {
-  font-size: 18px;
+  font-size: medium;
   margin-bottom: 30px;
   color: #2a2a2a;
 }

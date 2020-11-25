@@ -9,6 +9,20 @@
                 <div class="col-12 col-sm-4 col-md-1"></div>
                 <div class="col-12 col-sm-4 col-md-10">
                     <h6 class="short">သက်တမ်းတိုပန်းပျိုးပင်များ</h6>
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                        <div class="col-12 col-sm-4 col-md-10">
+                            <div class="item-img-wrap ">
+                                <img src="{{ url('/slide1.jpg') }}" class="img-responsive" alt="workimg" id="hover">
+                                <div class="item-img-overlay">
+                                    <a href="#" class="show-image">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-1"></div>
+                    </div>
                     <h6 class="short">အပင်သဘာဝနှင့်သွင်ပြင်လက္ခဏာများ</h6>
                     <p class="pagg">သက်တမ်းတိုပန်းပင်အများစုမှာ အပင်ပုမျိုးများ ဖြစ်ကြသည်။ သက်တမ်းတိုပန်းပျိုးပင်များထဲမှ ယခု စိုက်ပျိုးရောင်းချလျက်ရှိသော ပန်းပင်များမှာ (၁)ဒေလီယာ၊ (၂)ကြက်မောက်၊ (၃)ဇော်မွှား၊ (၄)သရက်ထည်၊ (၅)ထပ်တရာ၊ (၆)ကျားပါးစပ်၊ (၇)စိန်ခြယ် နှင့် (၈)ရွက်လှပျော့တို့ ဖြစ်ပါသည်။ </p><br>
                     <h6 class="little">(၁)ဒေလီယာပန်း</h6>

@@ -62,11 +62,7 @@ Route::group(['prefix'  =>  'admin'], function () {
         Route::group(['prefix' => 'orders'], function () {
            Route::get('/', 'Admin\OrderController@index')->name('admin.orders.index');
            Route::get('/{order}/show', 'Admin\OrderController@show')->name('admin.orders.show');
+           Route::get('/{order}/delete', 'Admin\OrderController@delete')->name('admin.orders.delete');
         });
-
-        Route::group(['prefix' => 'messages'], function () {
-            Route::get('/', 'Admin\MessageController@index')->name('admin.messages.index');
-            Route::post('/store', 'Admin\MessageController@store')->name('admin.messages.store');
-         });
     });
 });
