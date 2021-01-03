@@ -1,7 +1,7 @@
 /node_modules
-/public/hot
-/public/storage
-/storage/*.key
+# /public/hot
+
+
 /vendor
 .env
 .env.backup
@@ -13,6 +13,5 @@ yarn-error.log
 *.sqlite
 *.sqlite-journal
 .idea
-/public/backend
-/public/frontend
-/public/uploads
+# /public/backend
+# /public/frontend
