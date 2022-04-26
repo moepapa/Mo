@@ -28,7 +28,7 @@
                     <ul class="list-unstyled">
                         <li> <a href="{{ route('register') }}"> User register </a></li><br>
                         <li> <a href="{{ route('login') }}"> User Login </a></li><br>
-                        <li> <a href="{{ route('account.orders') }}"> My Orders </a></li><br>
+                        
                         <li> <a href="{{ route('logout') }}"> User Logout </a></li>
                     </ul>
                 </aside>

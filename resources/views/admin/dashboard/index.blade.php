@@ -9,23 +9,13 @@
     <div class="row">
         <div class="col-md-6 col-lg-3">
             <div class="widget-small coloured-icon">
-                <div class="success"><i class="icon fa fa-leaf"></i></div>
-                <div class="info">
-                    <a href="{{ route('admin.seedlings.index') }}">
-                        <h4>Seedlings</h4>
-                        <b>{{App\Models\Seedling::count()}}</b>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small info coloured-icon">
-                <i class="icon fa fa-bar-chart fa-3x"></i>
-                <div class="info">
-                    <a href="{{ route('admin.orders.index') }}">
-                        <h4>Orders</h4>
-                        <b>{{App\Models\Order::count()}}</b>
-                    </a>
+                <div class="widget-small primary coloured-icon"><i class="icon fas fa-music fa-3x"></i>
+                    <div class="info">
+                        <a href="{{ route('admin.songs.index') }}">
+                            <h4>Songs</h4>
+                            <b>{{App\Models\Song::count()}}</b>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

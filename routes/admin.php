@@ -12,16 +12,6 @@ Route::group(['prefix'  =>  'admin'], function () {
             return view('admin.dashboard.index');
         })->name('admin.dashboard');
 
-        Route::group(['prefix'  =>   'categories'], function() {
-
-            Route::get('/', 'Admin\CategoryController@index')->name('admin.categories.index');
-            Route::get('/create', 'Admin\CategoryController@create')->name('admin.categories.create');
-            Route::post('/store', 'Admin\CategoryController@store')->name('admin.categories.store');
-            Route::get('/{id}/edit', 'Admin\CategoryController@edit')->name('admin.categories.edit');
-            Route::post('/update', 'Admin\CategoryController@update')->name('admin.categories.update');
-            Route::get('/{id}/delete', 'Admin\CategoryController@delete')->name('admin.categories.delete');
-
-        });
 
         Route::group(['prefix'  =>   'users'], function() {
 
@@ -33,36 +23,31 @@ Route::group(['prefix'  =>  'admin'], function () {
             Route::get('/', 'AdminController@index')->name('admin.index');
         });
 
-        Route::group(['prefix'  =>   'types'], function() {
+        Route::group(['prefix' => 'songs'], function () {
 
-            Route::get('/', 'Admin\TypeController@index')->name('admin.types.index');
-            Route::get('/create', 'Admin\TypeController@create')->name('admin.types.create');
-            Route::post('/store', 'Admin\TypeController@store')->name('admin.types.store');
-            Route::get('/{id}/edit', 'Admin\TypeController@edit')->name('admin.types.edit');
-            Route::post('/update', 'Admin\TypeController@update')->name('admin.types.update');
-            Route::get('/{id}/delete', 'Admin\TypeController@delete')->name('admin.types.delete');
+           Route::get('/', 'Admin\SongController@index')->name('admin.songs.index');
+           Route::get('/create', 'Admin\SongController@create')->name('admin.songs.create');
+           Route::post('/store', 'Admin\SongController@store')->name('admin.songs.store');
+           Route::get('/edit/{id}', 'Admin\SongController@edit')->name('admin.songs.edit');
+           Route::get('/{id}/delete', 'Admin\SongController@delete')->name('admin.songs.delete');
+           Route::post('/update', 'Admin\SongController@update')->name('admin.songs.update');
+           Route::get('/{song}/show', 'Admin\SongController@show')->name('admin.songs.show');
+           Route::get('/search', 'Admin\SongController@search')->name('admin.songs.search');
+           
+           Route::post('images/upload', 'Admin\SongImageController@upload')->name('admin.songs.images.upload');
+           Route::get('images/{id}/delete', 'Admin\SongImageController@delete')->name('admin.songs.images.delete');
+        });
+
+        Route::group(['prefix'  =>   'artists'], function() {
+
+            Route::get('/', 'Admin\ArtistController@index')->name('admin.artists.index');
+            Route::get('/create', 'Admin\ArtistController@create')->name('admin.artists.create');
+            Route::post('/store', 'Admin\ArtistController@store')->name('admin.artists.store');
+            Route::get('/{id}/edit', 'Admin\ArtistController@edit')->name('admin.artists.edit');
+            Route::post('/update', 'Admin\ArtistController@update')->name('admin.artists.update');
+            Route::get('/{id}/delete', 'Admin\ArtistController@delete')->name('admin.artists.delete');
         
         });
 
-        Route::group(['prefix' => 'seedlings'], function () {
-
-           Route::get('/', 'Admin\SeedlingController@index')->name('admin.seedlings.index');
-           Route::get('/create', 'Admin\SeedlingController@create')->name('admin.seedlings.create');
-           Route::post('/store', 'Admin\SeedlingController@store')->name('admin.seedlings.store');
-           Route::get('/edit/{id}', 'Admin\SeedlingController@edit')->name('admin.seedlings.edit');
-           Route::get('/{id}/delete', 'Admin\SeedlingController@delete')->name('admin.seedlings.delete');
-           Route::post('/update', 'Admin\SeedlingController@update')->name('admin.seedlings.update');
-           Route::get('/{seedling}/show', 'Admin\SeedlingController@show')->name('admin.seedlings.show');
-           Route::get('/search', 'Admin\SeedlingController@search')->name('admin.seedlings.search');
-           
-           Route::post('images/upload', 'Admin\SeedlingImageController@upload')->name('admin.seedlings.images.upload');
-           Route::get('images/{id}/delete', 'Admin\SeedlingImageController@delete')->name('admin.seedlings.images.delete');
-        });
-
-        Route::group(['prefix' => 'orders'], function () {
-           Route::get('/', 'Admin\OrderController@index')->name('admin.orders.index');
-           Route::get('/{order}/show', 'Admin\OrderController@show')->name('admin.orders.show');
-           Route::get('/{order}/delete', 'Admin\OrderController@delete')->name('admin.orders.delete');
-        });
     });
 });

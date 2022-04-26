@@ -18,60 +18,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <form action="{{ route('seedling.search') }}" method="GET" class="search-form">
-                        <div class="input-group">
-                            <input type="text" class="search-box" name="query" value="{{ request()->input('query') }}" id="query" placeholder="Search for seedlings...">
-                            <button class="bhov" type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="widgets-wrap d-flex justify-content-end">
-                        <div class="widget-header">
-                            <a href="{{ route('checkout.cart') }}" class="icontext">
-                                <div class="icon-wrap icon-xs"><i
-                                        class="fa fa-shopping-cart"></i></div>
-                                <div class="text-wrap">
-                                    <medium>{{ $cartCount }} items</medium>
-                                </div>
-                            </a>
-                        </div>
-                        @guest
-                            <div class="widget-header">
-                                <a href="{{ route('login') }}" class="ml-3 icontext">
-                                    <div class="icon-wrap icon-xs"><i class="fa fa-user"></i></div>
-                                    <div class="text-wrap"><span>Login</span></div>
-                                </a>
-                            </div>
-                            <div class="widget-header">
-                                <a href="{{ route('register') }}" class="ml-3 icontext">
-                                    <div class="icon-wrap icon-xs"><i class="fa fa-user"></i></div>
-                                    <div class="text-wrap"><span>Register</span></div>
-                                </a>
-                            </div>
-                        @else
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->full_name }} <span class="caret"></span>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('account.orders') }}">Orders</a>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
-                            </ul>
-                        @endguest
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

@@ -24,36 +24,28 @@
             <div class="col-12 col-sm-12 col-md-12">
                 <section class="section-pagetop bg-white">
                     <div class="container search-results clearfix">
-                        <h6 class="search-results-count text-green" style="font-size:20px;">Search Results - &nbsp;{{ $seedlings->total() }} result(s) for &nbsp;'{{ request()->input('query') }}'</h6>
+                        <h6 class="search-results-count text-green" style="font-size:20px;">Search Results - &nbsp;{{ $songs->total() }} result(s) for &nbsp;'{{ request()->input('query') }}'</h6>
                         <br>
-                        @foreach($seedlings as $seedling)
-                            <div>{{ $seedling->myan_name }}</div>
+                        @foreach($songs as $song)
+                            <div>{{ $song->song_name }}</div>
                         @endforeach
                         <br>
                         <div class="tile-body table-responsive">
                             <table class="table table-hover table-bordered" id="">
                                 <thead>
                                     <tr>
-                                        <th class="text-center text-black"> Myanmar Name </th>
-                                        <th class="text-center text-black"> Category </th>
-                                        <th class="text-center text-black"> Type </th>
-                                        <th class="text-center text-black"> Price </th>
+                                        <th class="text-center text-black"> Song Name </th>
+                                        <th class="text-center text-black"> Description </th>
                                         <th class="text-center text-black"> Details </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($seedlings as $seedling)
+                                    @foreach($songs as $song)
                                     <tr>
-                                        <td class="text-center">{{ $seedling->myan_name }}</td>
+                                        <td class="text-center">{{ $song->song_name }}</td>
+                                        <td class="text-center">{{ $song->description }}</td>
                                         <td class="text-center">
-                                            @foreach($seedling->categories as $category)
-                                                <span class="badge badge-info">{{ $category->name }}</span>
-                                            @endforeach
-                                        </td>
-                                        <td class="text-center">{{ $seedling->type->name }}</td>
-                                        <td class="text-center">{{ $seedling->price }}</td>
-                                        <td class="text-center">
-                                            <a href="{{ route('admin.seedlings.show', $seedling->id) }}" class="btn btn-sm btn-success">&nbsp&nbsp&nbsp&nbsp View &nbsp&nbsp&nbsp&nbsp</a>
+                                            <a href="{{ route('admin.songs.show', $song->id) }}" class="btn btn-sm btn-success">&nbsp&nbsp&nbsp&nbsp View &nbsp&nbsp&nbsp&nbsp</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -61,7 +53,7 @@
                             </table>
                         </div>
 
-                        {{ $seedlings->appends(request()->input())->links() }}
+                        {{ $songs->appends(request()->input())->links() }}
                     </div>
                 </section>
             </div>

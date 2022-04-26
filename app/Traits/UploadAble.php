@@ -29,16 +29,16 @@ trait UploadAble
             $name . "." . $file->getClientOriginalExtension(),
             $disk
         );
-        // $extension = $request->image->extension();
-        // $uuid = Str::uuid();
-        // $request->image->storeAs('/public',$uuid.".".$extension);
-        // $url = Storage::url($uuid.".".$extension);
-        // if ($files = $request->file('image')) {
-        //     $destinationPath = 'storage/'; // upload path
-        //     $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
-        //     $files->move($destinationPath, $profileImage);
-        //     $update['image'] = "$profileImage";
-        //  }
+        $extension = $request->image->extension();
+        $uuid = Str::uuid();
+        $request->image->storeAs('/public',$uuid.".".$extension);
+        $url = Storage::url($uuid.".".$extension);
+        if ($files = $request->file('image')) {
+            $destinationPath = 'storage/'; // upload path
+            $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
+            $files->move($destinationPath, $profileImage);
+            $update['image'] = "$profileImage";
+         }
     }
 
     /**
